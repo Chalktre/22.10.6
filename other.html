@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<input type='submit'>
+		
+		<script>
+			class Father {
+				constructor(x, y) {
+					this.x = x;
+					this.y = y;
+				}
+				
+				sum() {
+					console.log((this.x + this.y));
+				}
+			}
+			
+			class Son extends Father{
+				constructor(x, y) {
+					super(x, y);
+					this.x = x;
+					this.y = y;
+					this.sub()
+				}
+				
+				sub() {
+					console.log((this.x - this.y));
+				}
+			}
+			
+			var son = new Son(5, 3);
+			 // son.sub();
+			 son.sum();
+		</script>
+	</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			class Star {
+				constructor(uname, age) {
+					this.uname = uname;
+					this.age = age;
+				}
+				sing(song) {
+					console.log(this.uname + ' ' + song);
+				}
+			}
+			
+			var ldh = new Star('刘德华', 50);
+			
+			console.log(ldh.uname, ldh.age);
+			ldh.sing('what?');
+		</script>
+	</body>
+</html>
